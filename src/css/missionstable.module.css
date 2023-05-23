@@ -1,0 +1,73 @@
+.tableContainer {
+  border-top: 2px solid gray;
+  padding: 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+th {
+  text-align: start;
+  min-width: 150px;
+  font-size: 1.4rem;
+}
+
+td {
+  font-size: 1.12rem;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.tableRow:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.tableCell {
+  border: 2px solid gray;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.member {
+  color: #fff;
+  background-color: rgb(5, 122, 113);
+}
+
+.notMember {
+  color: lightgrey;
+  background-color: rgb(97, 95, 95);
+}
+
+button {
+  font-weight: bold;
+  width: 120px;
+  padding: 5px 3px;
+  border: none;
+  border-radius: 5px;
+}
+
+.join,
+.leave {
+  cursor: pointer;
+  padding: 13px 5px;
+  margin: 0 15px;
+}
+
+.join:hover,
+.leave:hover {
+  box-shadow: 0 0 7px;
+}
+
+.leave {
+  color: rgb(228, 76, 76);
+  background-color: #fff;
+  border: 1px solid;
+}
+
+.join {
+  color: rgb(82, 82, 82);
+  background-color: #fff;
+  border: 1px solid rgb(82, 82, 82);
+}
+
