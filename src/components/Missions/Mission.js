@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions } from '../../Redux/Missions/missionsSlice';
+import styles from '../../css/missionstable.module.css';
 import MissionRow from './MissionRow';
 
 const Mission = () => {
@@ -20,13 +21,13 @@ const Mission = () => {
   }
 
   return (
-    <div className="table-container">
-      <table>
+    <div className={styles.tableContainer}>
+      <table className={styles.table}>
         <thead>
-          <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
+          <tr className={styles.tableCell}>
+            <th className={styles.tableCell}>Mission</th>
+            <th className={styles.tableCell}>Description</th>
+            <th className={styles.tableCell}>Status</th>
             <td> </td>
           </tr>
         </thead>
