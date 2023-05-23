@@ -3,8 +3,8 @@ import './index.css';
 import {
   BrowserRouter as Router, Route, Routes,
 } from 'react-router-dom';
-import Mission from './components/Mission';
-import Rocket from './components/Rocket';
+import Mission from './components/Missions/Mission';
+import Rocket from './components/Rockets/Rocket';
 import Navigation from './components/Navigation';
 import Profile from './components/Profile';
 
