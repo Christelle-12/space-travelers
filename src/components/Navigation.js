@@ -11,7 +11,7 @@ const Navigation = () => (
     <nav className="navbar">
       <ul>
         <li>
-          <NavLink to="/rocket">Rocket</NavLink>
+          <NavLink to="/">Rocket</NavLink>
         </li>
         <li>
           <NavLink to="/mission">Missions</NavLink>

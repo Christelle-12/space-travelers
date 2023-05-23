@@ -6,6 +6,7 @@ import {
 import Mission from './components/Mission';
 import Rocket from './components/Rocket';
 import Navigation from './components/Navigation';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <div>
         <Navigation />
         <Routes>
-          <Route path="/" element={<profile />} />
-          <Route path="/Rocket" element={<Rocket />} />
+          <Route path="/" element={<Rocket />} />
           <Route path="/Mission" element={<Mission />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </Router>
