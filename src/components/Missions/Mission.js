@@ -24,9 +24,9 @@ const Mission = () => {
       <table>
         <thead>
           <tr>
-            <td>Mission</td>
-            <td>Description</td>
-            <td>Status</td>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
             <td> </td>
           </tr>
         </thead>
