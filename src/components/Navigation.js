@@ -4,20 +4,20 @@ import logo from '../img/planet.png';
 
 const Navigation = () => (
   <header>
-    <div>
+    <div className="logo-container">
       <img src={logo} alt="logoImg" />
-      <h1>Space Travelers&apos;Hub</h1>
+      <h1>Space Travelers&apos; Hub</h1>
     </div>
-    <nav>
+    <nav className="navbar">
       <ul>
         <li>
           <NavLink to="/rocket">Rocket</NavLink>
         </li>
         <li>
-          <NavLink to="/mission">Mission</NavLink>
+          <NavLink to="/mission">Missions</NavLink>
         </li>
         <li>
-          <NavLink to="/profile">My profile</NavLink>
+          <NavLink to="/profile">My Profile</NavLink>
         </li>
       </ul>
     </nav>
