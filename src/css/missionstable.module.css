@@ -54,11 +54,6 @@ button {
   margin: 0 15px;
 }
 
-.join:hover,
-.leave:hover {
-  box-shadow: 0 0 7px;
-}
-
 .leave {
   color: rgb(228, 76, 76);
   background-color: #fff;
@@ -71,3 +66,7 @@ button {
   border: 1px solid rgb(82, 82, 82);
 }
 
+.join:hover,
+.leave:hover {
+  box-shadow: 0 0 7px;
+}
