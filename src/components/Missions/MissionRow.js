@@ -8,7 +8,7 @@ const MissionRow = ({
   props,
 }) => {
   const {
-    id, name, description, joined,
+    name, id, description, reserved,
   } = props;
 
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const MissionRow = ({
       <th className={styles.tableCell}>{name}</th>
       <td className={styles.tableCell}>{description}</td>
       <td className={styles.tableCell}>
-        {joined === true
+        {reserved === true
           && (
           <button
             className={styles.member}
@@ -27,7 +27,7 @@ const MissionRow = ({
             Active Member
           </button>
           )}
-        {joined !== true
+        {reserved !== true
           && (
           <button
             className={styles.notMember}
@@ -38,7 +38,7 @@ const MissionRow = ({
           )}
       </td>
       <td className={styles.tableCell}>
-        {joined === true
+        {reserved === true
           && (
           <button
             className={styles.leave}
@@ -48,7 +48,7 @@ const MissionRow = ({
             Leave Mission
           </button>
           )}
-        {joined !== true
+        {reserved !== true
           && (
           <button
             className={styles.join}
@@ -72,7 +72,7 @@ MissionRow.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  joined: PropTypes.bool.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 
 export default MissionRow;

@@ -25,7 +25,7 @@ const missionsSlice = createSlice({
       const id = action.payload;
       state.data = state.data.map((each) => {
         if (each.id === id) {
-          each.joined = true;
+          each.reserved = true;
         }
         return each;
       });
@@ -34,7 +34,7 @@ const missionsSlice = createSlice({
       const id = action.payload;
       state.data = state.data.map((each) => {
         if (each.id === id) {
-          each.joined = false;
+          each.reserved = false;
         }
         return each;
       });
