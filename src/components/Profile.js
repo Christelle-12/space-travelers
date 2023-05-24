@@ -21,11 +21,11 @@ const Profile = () => {
             <tr>
               <td className={styles.grayed}>
                 No missions
-                <button className={styles.join} type="button">
-                  <NavLink to="/mission">
+                <NavLink to="/mission">
+                  <button className={styles.join} type="button">
                     Join A mission
-                  </NavLink>
-                </button>
+                  </button>
+                </NavLink>
               </td>
             </tr>
           )
