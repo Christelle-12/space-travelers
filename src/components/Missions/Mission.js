@@ -5,16 +5,18 @@ import styles from '../../css/missionstable.module.css';
 import MissionRow from './MissionRow';
 
 const Mission = () => {
-  const { data, loading } = useSelector((state) => state.missions);
+  const { data, loading, isFetched } = useSelector((state) => state.missions);
 
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (!isFetched) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, isFetched]);
 
   if (loading) {
     return (
-      <div>
+      <div className={styles.loading}>
         <p>Loading...</p>
       </div>
     );
