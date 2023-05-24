@@ -51,6 +51,7 @@ const missionsSlice = createSlice({
           id: each.mission_id,
           description: each.description,
           more: each.wikipedia,
+          reserved: false,
         }));
         state.loading = false;
       })

@@ -5,12 +5,8 @@ import styles from '../../css/missionstable.module.css';
 import { joinMission, leaveMission } from '../../Redux/Missions/missionsSlice';
 
 const MissionRow = ({
-  props,
+  name, id, description, reserved,
 }) => {
-  const {
-    name, id, description, reserved,
-  } = props;
-
   const dispatch = useDispatch();
 
   return (
@@ -64,11 +60,6 @@ const MissionRow = ({
 };
 
 MissionRow.propTypes = {
-  props: PropTypes.shape({
-    id: PropTypes.string,
-    name: PropTypes.string,
-    description: PropTypes.string,
-  }).isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

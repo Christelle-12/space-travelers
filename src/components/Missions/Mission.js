@@ -32,7 +32,15 @@ const Mission = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((each) => <MissionRow key={each.id} props={each} />)}
+          {data.map((each) => (
+            <MissionRow
+              key={each.id}
+              id={each.id}
+              name={each.name}
+              description={each.description}
+              reserved={each.reserved}
+            />
+          ))}
         </tbody>
       </table>
     </div>
