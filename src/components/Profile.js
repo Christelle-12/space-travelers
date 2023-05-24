@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { leaveMission } from '../Redux/Missions/missionsSlice';
 import styles from '../css/missionstable.module.css';
 
@@ -21,11 +21,11 @@ const Profile = () => {
             <tr>
               <td className={styles.grayed}>
                 No missions
-                <NavLink to="/mission">
+                <Link to="/mission">
                   <button className={styles.join} type="button">
                     Join A mission
                   </button>
-                </NavLink>
+                </Link>
               </td>
             </tr>
           )
