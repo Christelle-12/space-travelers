@@ -1,5 +1,4 @@
 .tableContainer {
-  border-top: 2px solid gray;
   padding: 20px;
   max-width: 1800px;
   margin: 0 auto;
@@ -24,6 +23,29 @@ td {
 }
 
 .tableCell {
+  border: 2px solid gray;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.profileTable {
+  width: 40%;
+  border-collapse: collapse;
+  margin: 20px 40px;
+}
+
+.profileTable th {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.profileTable td {
+  font-size: 1.6rem;
+  padding: 20px;
+}
+
+.grayed {
+  color: gray;
   border: 2px solid gray;
   padding: 10px;
   padding-bottom: 15px;
@@ -69,4 +91,18 @@ button {
 .join:hover,
 .leave:hover {
   box-shadow: 0 0 7px;
+}
+
+.loading {
+  height: 300px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.join a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
 }
