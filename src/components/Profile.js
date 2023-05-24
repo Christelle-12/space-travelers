@@ -1,11 +1,14 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { leaveMission } from '../Redux/Missions/missionsSlice';
 import styles from '../css/missionstable.module.css';
 
 const Profile = () => {
   const missionsData = useSelector((state) => state.missions.data);
   const reservedMissions = missionsData.filter((each) => each.reserved === true);
+
+  const dispatch = useDispatch();
 
   return (
     <div>
@@ -28,7 +31,16 @@ const Profile = () => {
           )
           : reservedMissions.map((res) => (
             <tr key={res.id}>
-              <td className={styles.tableCell}>{res.name}</td>
+              <td className={styles.tableCell}>
+                {res.name}
+                <button
+                  className={styles.leave}
+                  type="button"
+                  onClick={() => dispatch(leaveMission(res.id))}
+                >
+                  Leave Mission
+                </button>
+              </td>
             </tr>
           ))}
       </table>
