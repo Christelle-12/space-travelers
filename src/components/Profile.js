@@ -14,14 +14,14 @@ const Profile = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className={styles.flex}>
       <table className={styles.profileTable}>
         <tbody>
           <tr>
             <th>My Missions</th>
           </tr>
           {reservedMissions.length < 1 ? (
-            <tr>
+            <tr className={styles.row}>
               <td className={styles.grayed}>
                 No missions
                 <Link to="/mission">
@@ -33,7 +33,7 @@ const Profile = () => {
             </tr>
           ) : (
             reservedMissions.map((res) => (
-              <tr key={res.id}>
+              <tr key={res.id} className={styles.row}>
                 <td className={styles.tableCell}>
                   {res.name}
                   <button
@@ -49,35 +49,38 @@ const Profile = () => {
           )}
         </tbody>
       </table>
-      <ul>
-        <li>
-          <h1>My Rockets</h1>
-        </li>
+      <table className={styles.profileTable}>
+        <tr>
+          <th>My Rockets</th>
+        </tr>
         {(() => {
           if (reservedRockets.length < 1) {
             return (
-              <li>
-                <span>
+              <tr className={styles.row}>
+                <td className={styles.grayed}>
                   No rockets reserved
                   <Link to="/">
-                    <button type="button">
+                    <button type="button" className={`${styles.join} ${styles.profilebutton}`}>
                       Reserve rocket
                     </button>
                   </Link>
-                </span>
-              </li>
+                </td>
+              </tr>
             );
           }
           return reservedRockets.map((response) => (
-            <li key={response.id}>
-              <p>{response.name}</p>
-              <button onClick={() => dispatch(cancelReserve(response.id))} type="button">
-                Cancel Reservation
-              </button>
-            </li>
+            <tr key={response.id} className={styles.row}>
+              <td className={styles.tableCell}>
+                {response.name}
+                <button onClick={() => dispatch(cancelReserve(response.id))} type="button" className={`${styles.leave} ${styles.profilebutton}`}>
+                  {' '}
+                  Cancel Reservation
+                </button>
+              </td>
+            </tr>
           ));
         })()}
-      </ul>
+      </table>
 
     </div>
   );

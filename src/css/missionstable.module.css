@@ -74,6 +74,7 @@ button {
   cursor: pointer;
   padding: 13px 5px;
   margin: 0 15px;
+  float: right;
 }
 
 .leave {
@@ -107,9 +108,19 @@ button {
   color: rgb(82, 82, 82);
 }
 
-.profileTable .tableCell,
+/* .profileTable .tableCell,
 .profileTable .grayed {
+  max-height:50px;
+} */
+.flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.row {
+  height: 5rem;
+}
+
+.profilebutton {
+  width: fit-content;
 }
