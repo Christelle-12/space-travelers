@@ -15,8 +15,19 @@ const RocketCard = ({ rocket, onReserve, onCancelReserve }) => {
         </div>
         <div className={styles.textdiv}>
           <h2 className={styles.titlecard}>{name}</h2>
-          {reserved && <p className={styles.reserved}>Reserved</p>}
-          <p className={styles.descr}>{description}</p>
+          <div className={styles.descr}>
+            {reserved && (
+            <p>
+              <span className={styles.reserved}>Reserved</span>
+              {description}
+            </p>
+            )}
+            {!reserved && (
+            <p>
+              {description}
+            </p>
+            )}
+          </div>
           {reserved ? (
             <button onClick={() => onCancelReserve(id)} type="button" className={styles.cancelbut}>
               Cancel Reservation

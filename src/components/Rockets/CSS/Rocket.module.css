@@ -32,12 +32,12 @@
 }
 
 .resbut {
-  width: 13%;
-  height: 2rem;
+  /* width: 13%; */
   background-color: rgb(2, 139, 252);
   color: #fff;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 16px;
+  padding: 10px;
   border-color: #fff;
 }
 
@@ -46,10 +46,10 @@
 }
 
 .cancelbut {
-  width: 13%;
-  height: 2rem;
-  background-color: #fff;
   border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #fff;
   border: 1px solid #cec9c9;
   color: #5a5555;
 }
@@ -59,14 +59,13 @@
 }
 
 .reserved {
-  background-color: rgb(5, 127, 226);
-  border-radius: 4.5px;
-  width: 4.5rem;
-  display: flex;
-  justify-content: center;
-  border: 1px solid gray;
+  background-color: rgb(32, 139, 32);
+  padding: 1px 5px;
+  border-radius: 5px;
   color: #fff;
-  padding: 3px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 0;
 }
 
 .descr {
