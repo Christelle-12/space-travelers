@@ -4,6 +4,7 @@ import axios from 'axios';
 const initialState = {
   data: [],
   loading: false,
+  isFetched: false,
 };
 
 const missionsURL = 'https://api.spacexdata.com/v3/missions';
@@ -54,6 +55,7 @@ const missionsSlice = createSlice({
           reserved: false,
         }));
         state.loading = false;
+        state.isFetched = true;
       })
       .addCase(fetchMissions.rejected, (state, action) => {
         state.Error = action.payload;
