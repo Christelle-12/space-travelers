@@ -32,13 +32,13 @@
 }
 
 .resbut {
-  /* width: 13%; */
   background-color: rgb(2, 139, 252);
   color: #fff;
   border-radius: 5px;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 14px;
+  padding: 10px 6px;
   border-color: #fff;
+  width: max-content;
 }
 
 .resbut:hover {
@@ -47,11 +47,12 @@
 
 .cancelbut {
   border-radius: 5px;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 14px;
+  padding: 10px 6px;
   background-color: #fff;
   border: 1px solid #cec9c9;
   color: #5a5555;
+  width: fit-content;
 }
 
 .cancelbut:hover {
