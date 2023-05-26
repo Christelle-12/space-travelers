@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+.logo-container,
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  padding: 10px 20px;
+  border-bottom: 2px solid rgb(207, 201, 201);
+  width: 97%;
+  margin: 0 auto;
+}
+
+.logo-container {
+  margin-right: auto;
+}
+
+.logo-container img {
+  height: 80px;
+  margin: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  gap: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: all 0.2s linear;
+  color: rgb(2, 139, 252);
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar ul li a.active {
+  color: blue;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.navbar ul li:last-child a {
+  border-left: 1px solid black;
+  padding-left: 10px;
+}

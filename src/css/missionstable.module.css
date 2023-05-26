@@ -1,0 +1,126 @@
+.tableContainer {
+  padding: 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+th {
+  text-align: start;
+  min-width: 150px;
+  font-size: 1.4rem;
+}
+
+td {
+  font-size: 1.12rem;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.tableRow:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.tableCell {
+  border: 2px solid gray;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.profileTable {
+  width: 40%;
+  border-collapse: collapse;
+  margin: 20px 40px;
+}
+
+.profileTable th {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.profileTable td {
+  font-size: 1.6rem;
+  padding: 20px;
+}
+
+.grayed {
+  color: gray;
+  border: 2px solid gray;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.member {
+  color: #fff;
+  background-color: rgb(5, 122, 113);
+}
+
+.notMember {
+  color: lightgrey;
+  background-color: rgb(97, 95, 95);
+}
+
+button {
+  font-weight: bold;
+  width: 120px;
+  padding: 5px 3px;
+  border: none;
+  border-radius: 5px;
+}
+
+.join,
+.leave {
+  cursor: pointer;
+  padding: 13px 5px;
+  margin: 0 15px;
+  float: right;
+}
+
+.leave {
+  color: rgb(228, 76, 76);
+  background-color: #fff;
+  border: 1px solid;
+}
+
+.join {
+  color: rgb(82, 82, 82);
+  background-color: #fff;
+  border: 1px solid rgb(82, 82, 82);
+}
+
+.join:hover,
+.leave:hover {
+  box-shadow: 0 0 7px;
+}
+
+.loading {
+  height: 300px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.join a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+}
+
+/* .profileTable .tableCell,
+.profileTable .grayed {
+  max-height:50px;
+} */
+.flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.row {
+  height: 5rem;
+}
+
+.profilebutton {
+  width: fit-content;
+}
