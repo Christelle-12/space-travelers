@@ -93,14 +93,13 @@ describe('Rocket', () => {
     expect(store.getActions()).toContainEqual(cancelReserve('2'));
   });
 
-  it("should dispatch fetchRockets action when isFetch is false", async () => {
+  it('should dispatch fetchRockets action when isFetch is false', async () => {
     await store.dispatch(fetchRockets(false)).unwrap();
-  
+
     const dispatchedActions = store.getActions();
     const actionTypes = dispatchedActions.map((action) => action.type);
-    
-    expect(actionTypes).toContain("rockets/fetchRockets/pending");
-    expect(actionTypes).toContain("rockets/fetchRockets/fulfilled");
+
+    expect(actionTypes).toContain('rockets/fetchRockets/pending');
+    expect(actionTypes).toContain('rockets/fetchRockets/fulfilled');
   });
-  
 });
